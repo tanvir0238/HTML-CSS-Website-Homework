@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Primary-color: #30AE69;
+    --Secondary-color: #072e85;
+    --Dark-color: #151618;
+    --Robot: "Roboto", sans-serif;
+}
+body{
+    font-family: var(--Robot);
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.btn a{
+    background-color: var(--Dark-color);
+    color: white;
+    padding: 16px 45px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.underlined_title{
+    font-size: 32px;
+    line-height: 38px;
+    position: relative;
+}
+.title_underline{
+    content: "";
+    width: 98px;
+    height: 5px;
+    background-color: var(--Primary-color);
+    color: var(--Primary-color);
+    position: absolute;
+    left: 20%;
+    bottom: -22%;
+}
+
+/* Header */
+header{
+    background-color: var(--Dark-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 25px;
+}
+.site_logo a img{
+    max-width: 86px;
+}
+nav ul{
+    display: flex;
+    column-gap: 60px;
+}
+nav ul li a{
+    color: white;
+    font-size: 16px;
+    padding-bottom: 2px;
+    transition: 0.4s;
+}
+nav ul li a:hover{
+    border-bottom: 1px solid white;
+}
+nav ul li .active{
+    border-bottom: 1px solid white;
+}
+
+/* Hero Section */
+.hero_section{
+    background-image: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero_section_content_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+}
+.hero_content .btn:last-child{
+    margin-top: 60px;
+}
+.hero_content h2{
+    color: white;
+    font-size: 64px;
+    line-height: 77px;
+}
+.hero_content h3{
+    color: white;
+    font-size: 40px;
+    line-height: 48px;
+}
+.hero_banner_img img{
+    width: 460px;
+}
+
+/* How It Works Section */
+
+.hiw_content_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 80px;
+    padding: 100px 0px;
+}
+.hiw_box_wrapper{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.hiw_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 325px;
+}
+.hiw_box_icon{
+    background-color: #f6f5f7;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+}
+.hiw_box_icon i{
+    font-size: 50px;
+}
+.hiw_box_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hiw_box_content h5{
+    font-size: 20px;
+    line-height: 24px;
+    margin: 15px 0px;
+}
+.hiw_box_content p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* About Section */
+.about_content_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 72px;
+    padding: 60px 0px;
+}
+.about_image{
+    margin: -30px 0px -50px 0px;
+}
+.about_content_wrapper p{
+    text-align: center;
+}
+
+/* Call to Action */
+.cta{
+    background: linear-gradient(to right, #30ae69, #072e85);
+    margin-top: 80px;
+}
+.cta_content_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cta_content h3{
+    color: white;
+    font-size: 32px;
+    line-height: 38px;
+}
+.cta_content p{
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    width: 74%;
+    padding-top: 16px;
+}
+.download_icons_wrapper{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    padding-top: 50px;
+}
+.download_icons_wrapper span{
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+}
+.download_icons{
+    display: flex;
+    column-gap: 20px;
+}
+.cta_image img{
+    width: 530px;
+    margin-top: -30px;
+}
+
+/* Testimonial Section */
+.testimonial_content_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 100px;
+    padding: 80px 0px;
+}
+.testimonial_card_wrapper{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 80px;
+    padding-top: 40px;
+}
+.testimonial_card{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+.testimonial_image_box{
+    background-color: white;
+    box-shadow: 0px 6px 30px 8px rgba(0, 0, 0, 0.151);
+    padding: 0px 20px 22px 20px;
+}
+.testimonial_image_box img{
+    width: 180px;
+    height: auto;
+    margin-top: -30px;
+}
+.testimonial_image_box_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 6px;
+    padding-top: 20px;
+}
+.testimonial_image_box_content h6{
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.testimonial_image_box_content p{
+    color: #6d6c6c;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* Footer */
+footer{
+    background-color: var(--Dark-color);
+    color: white;
+}
+.footer_content_wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0px 45px 0px;
+}
+.f_col{
+    width: 25%;
+    padding: 0px 14px;
+}
+.f_col .site_logo a img{
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.f_col h6{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+.contact_content ul li i{
+    width: 35px;
+    height: auto;
+    font-size: 20px;
+}
+.contact_content ul li{
+    font-size: 16px;
+    line-height: 24px;
+    margin: 14px 0px;
+}
+.f_col p{
+    font-size: 16px;
+    line-height: 24px;
+}
+.f_col ul li a{
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 16px 0px;
+    text-decoration: underline;
+}
+.f_col form{
+    display: flex;
+    flex-direction: column;
+}
+.f_col form .email_input{
+    background-color: transparent;
+    outline: none;
+    color: white;
+    padding: 7px 10px;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid white;
+}
+.f_col form .subscribe_btn{
+    background-color: var(--Primary-color);
+    color: white;
+    font-size: 15px;
+    line-height: 23px;
+    text-transform: uppercase;
+    width: fit-content;
+    padding: 8px 35px;
+    margin-top: 15px;
+    outline: none;
+    border: none;
+}
+.copyright_text p{
+    padding: 20px 0px;
+    color: #636363;
+    text-align: center;
+}
